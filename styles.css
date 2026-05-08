@@ -122,15 +122,17 @@ h1,
 h2,
 h3,
 p {
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
 }
 
 h1,
 h2,
 h3 {
   margin: 0;
-  line-height: 1.08;
+  line-height: 1.15;
   letter-spacing: 0;
+  word-break: normal;
+  overflow-wrap: normal;
 }
 
 h1 {
@@ -139,7 +141,6 @@ h1 {
 }
 
 h2 {
-  max-width: 18ch;
   font-size: 3rem;
 }
 
@@ -199,10 +200,7 @@ h3 {
 }
 
 .section-heading {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 32px;
+  display: block;
   max-width: 1280px;
   margin: 0 auto 34px;
 }
@@ -322,9 +320,9 @@ h3 {
 
 .exam-title {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  gap: 14px;
+  gap: 8px;
   margin-bottom: 12px;
 }
 
