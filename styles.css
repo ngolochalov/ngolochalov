@@ -493,7 +493,8 @@ h3 {
 }
 
 .benefits-band h2 {
-  max-width: 24ch;
+  font-size: clamp(1.5rem, 2.8vw, 3rem);
+  white-space: nowrap;
 }
 
 .benefit-grid {
@@ -692,6 +693,10 @@ h3 {
 }
 
 @media (max-width: 980px) {
+  .benefits-band h2 {
+    white-space: normal;
+  }
+
   .nav-links {
     display: none;
   }
