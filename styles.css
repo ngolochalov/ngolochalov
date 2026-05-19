@@ -365,7 +365,7 @@ h3 {
 }
 
 .achievements-section {
-  background: var(--soft);
+  background: var(--white);
 }
 
 .achievements-heading {
@@ -487,12 +487,8 @@ h3 {
 }
 
 .benefits-band {
-  padding-top: 64px;
-  padding-bottom: 64px;
-  background:
-    linear-gradient(90deg, rgba(18, 62, 67, 0.96), rgba(31, 106, 112, 0.92)),
-    var(--deep);
-  color: var(--white);
+  background: var(--white);
+  color: var(--ink);
 }
 
 .benefits-band .section-heading,
@@ -503,6 +499,7 @@ h3 {
 .benefits-band h2 {
   font-size: clamp(1.5rem, 2.8vw, 3rem);
   white-space: nowrap;
+  color: var(--ink);
 }
 
 .benefit-grid {
@@ -510,8 +507,8 @@ h3 {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
-  background: rgba(255, 255, 255, 0.24);
-  border: 1px solid rgba(255, 255, 255, 0.24);
+  background: var(--line);
+  border: 1px solid var(--line);
   border-radius: 8px;
   overflow: hidden;
 }
@@ -519,7 +516,7 @@ h3 {
 .benefit-grid article {
   min-height: 118px;
   padding: 18px;
-  background: rgba(255, 255, 255, 0.08);
+  background: var(--soft);
 }
 
 .benefit-grid strong {
@@ -529,7 +526,7 @@ h3 {
 }
 
 .benefit-grid span {
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -562,7 +559,7 @@ h3 {
 }
 
 .section-programs {
-  background: var(--soft);
+  background: var(--white);
 }
 
 .program-grid {
@@ -703,6 +700,7 @@ h3 {
 @media (max-width: 980px) {
   .benefits-band h2 {
     white-space: normal;
+    color: var(--ink);
   }
 
   .nav-links {
@@ -919,6 +917,9 @@ h3 {
 }
 
 /* ── Accordion ─────────────────────────────────────────── */
+.accordion-section + .accordion-section {
+  border-top: 2px solid var(--teal);
+}
 .accordion-section {
   padding: 0;
 }
