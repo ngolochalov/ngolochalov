@@ -491,6 +491,11 @@ h3 {
   color: var(--ink);
 }
 
+.benefits-band .accordion-summary {
+  background: var(--white);
+  color: var(--ink);
+}
+
 .benefits-band .section-heading,
 .benefit-grid {
   max-width: 1280px;
@@ -886,7 +891,6 @@ h3 {
     border-color: #999;
   }
 
-  .benefits-band,
   .section-programs,
   .section-exams,
   .target-section,
@@ -922,6 +926,8 @@ h3 {
 }
 .accordion-section {
   padding: 0;
+  background: var(--white) !important;
+  color: var(--ink) !important;
 }
 
 .accordion {
@@ -950,9 +956,6 @@ h3 {
   background: rgba(0,0,0,0.03);
 }
 
-.benefits-band .accordion-summary:hover {
-  background: rgba(255,255,255,0.06);
-}
 
 .accordion-header {
   flex: 1;
@@ -1007,18 +1010,6 @@ h3 {
   border-color: var(--teal);
 }
 
-.benefits-band .accordion-arrow {
-  border-color: rgba(255,255,255,0.4);
-}
-
-.benefits-band .accordion-arrow::before,
-.benefits-band .accordion-arrow::after {
-  background: var(--white);
-}
-
-.benefits-band .accordion[open] .accordion-arrow {
-  border-color: rgba(255,255,255,0.9);
-}
 
 .accordion-body {
   padding: clamp(28px, 5vw, 54px) clamp(20px, 5vw, 70px);
