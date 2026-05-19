@@ -143,17 +143,7 @@ h1 {
 h2 {
   font-size: 3rem;
 }
-.dates-heading h2,
-.section-exams h2,
-.achievements-heading h2 {
-  font-size: 2rem;
-}
 
-.dates-heading .eyebrow,
-.section-exams .eyebrow,
-.achievements-heading .eyebrow {
-  font-size: 2rem;
-}
 
 h3 {
   font-size: 1.04rem;
