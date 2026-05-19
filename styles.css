@@ -917,3 +917,114 @@ h3 {
     border: 1px solid #bbb;
   }
 }
+
+/* ── Accordion ─────────────────────────────────────────── */
+.accordion-section {
+  padding: 0;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.accordion[open] > .accordion-summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.accordion-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(22px, 4vw, 38px) clamp(20px, 5vw, 70px);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.accordion-summary::-webkit-details-marker { display: none; }
+
+.accordion-summary:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.benefits-band .accordion-summary:hover {
+  background: rgba(255,255,255,0.06);
+}
+
+.accordion-header {
+  flex: 1;
+  min-width: 0;
+}
+
+.accordion-header .eyebrow {
+  margin: 0 0 6px;
+}
+
+.accordion-header h2 {
+  margin: 0;
+}
+
+.accordion-arrow {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--line);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, border-color 0.2s;
+  position: relative;
+}
+
+.accordion-arrow::before,
+.accordion-arrow::after {
+  content: "";
+  position: absolute;
+  background: var(--teal);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow::before {
+  width: 10px;
+  height: 1.5px;
+}
+
+.accordion-arrow::after {
+  width: 1.5px;
+  height: 10px;
+}
+
+.accordion[open] .accordion-arrow::after {
+  transform: scaleY(0);
+}
+
+.accordion[open] .accordion-arrow {
+  border-color: var(--teal);
+}
+
+.benefits-band .accordion-arrow {
+  border-color: rgba(255,255,255,0.4);
+}
+
+.benefits-band .accordion-arrow::before,
+.benefits-band .accordion-arrow::after {
+  background: var(--white);
+}
+
+.benefits-band .accordion[open] .accordion-arrow {
+  border-color: rgba(255,255,255,0.9);
+}
+
+.accordion-body {
+  padding: clamp(28px, 5vw, 54px) clamp(20px, 5vw, 70px);
+  animation: accordion-open 0.25s ease;
+}
+
+@keyframes accordion-open {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
