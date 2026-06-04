@@ -62,7 +62,6 @@ a:hover {
 }
 
 .brand {
-  min-width: max-content;
   color: var(--ink);
   font-weight: 800;
 }
@@ -132,7 +131,7 @@ h3 {
   line-height: 1.15;
   letter-spacing: 0;
   word-break: normal;
-  overflow-wrap: normal;
+  overflow-wrap: break-word;
 }
 
 h1 {
@@ -503,7 +502,7 @@ h3 {
 }
 
 .benefits-band h2 {
-  font-size: 3rem;
+  font-size: clamp(1.4rem, 4vw, 3rem);
   white-space: normal;
   color: var(--ink);
 }
@@ -772,8 +771,8 @@ h3 {
   }
 
   h1 {
-    max-width: 10ch;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+    max-width: none;
   }
 
   h2 {
@@ -969,6 +968,7 @@ h3 {
 
 .accordion-header h2 {
   margin: 0;
+  font-size: clamp(1.35rem, 4.5vw, 3rem);
 }
 
 .accordion-arrow {
