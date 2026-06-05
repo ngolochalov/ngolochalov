@@ -502,7 +502,7 @@ h3 {
 }
 
 .benefits-band h2 {
-  font-size: clamp(1.4rem, 4vw, 3rem);
+  font-size: 3rem;
   white-space: normal;
   color: var(--ink);
 }
@@ -971,7 +971,6 @@ h3 {
 
 .accordion-header h2 {
   margin: 0;
-  font-size: clamp(1.1rem, 5vw, 3rem);
   word-break: keep-all;
   white-space: normal;
   hyphens: none;
@@ -998,6 +997,7 @@ h3 {
   border-radius: 2px;
   transition: transform 0.3s ease;
 }
+
 .accordion-arrow::before {
   width: 10px;
   height: 1.5px;
