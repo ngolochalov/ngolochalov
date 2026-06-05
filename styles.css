@@ -111,15 +111,12 @@ a:hover {
 .eyebrow {
   margin: 0 0 10px;
   color: var(--amber);
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 850;
   letter-spacing: 0;
   text-transform: uppercase;
 }
 
-h1,
-h2,
-h3,
 p {
   overflow-wrap: break-word;
 }
@@ -131,7 +128,7 @@ h3 {
   line-height: 1.15;
   letter-spacing: 0;
   word-break: normal;
-  overflow-wrap: break-word;
+  overflow-wrap: normal;
 }
 
 h1 {
@@ -960,7 +957,6 @@ h3 {
 .accordion-header {
   flex: 1;
   min-width: 0;
-  overflow: hidden;
 }
 
 .accordion-header .eyebrow {
@@ -969,9 +965,9 @@ h3 {
 
 .accordion-header h2 {
   margin: 0;
-  word-break: keep-all;
-  overflow-wrap: break-word;
   hyphens: none;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .accordion-arrow {
