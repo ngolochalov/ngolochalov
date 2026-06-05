@@ -965,7 +965,7 @@ h3 {
 .accordion-header .eyebrow {
   margin: 0 0 6px;
   word-break: keep-all;
-  overflow-wrap: normal;
+  white-space: normal;
   hyphens: none;
 }
 
@@ -973,7 +973,7 @@ h3 {
   margin: 0;
   font-size: clamp(1.1rem, 5vw, 3rem);
   word-break: keep-all;
-  overflow-wrap: normal;
+  white-space: normal;
   hyphens: none;
 }
 
@@ -998,7 +998,6 @@ h3 {
   border-radius: 2px;
   transition: transform 0.3s ease;
 }
-
 .accordion-arrow::before {
   width: 10px;
   height: 1.5px;
