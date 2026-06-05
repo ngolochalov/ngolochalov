@@ -965,14 +965,12 @@ h3 {
 .accordion-header .eyebrow {
   margin: 0 0 6px;
   word-break: keep-all;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  overflow-wrap: break-word;
 }
 
 .accordion-header h2 {
   margin: 0;
-  font-size: clamp(1.35rem, 4.5vw, 3rem);
+  font-size: clamp(1.1rem, 5vw, 3rem);
   word-break: keep-all;
   overflow-wrap: break-word;
   hyphens: none;
