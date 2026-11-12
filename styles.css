@@ -8,4 +8,4 @@
 
 
 
-.registration-action{align-self:center}.registration-button{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:76px;padding:20px 30px;font-size:21px;font-weight:600;text-align:center}.registration-action p{margin-top:15px;font-size:17px;color:#526176}@media(max-width:760px){.registration-button{max-width:100%;min-height:70px;font-size:20px}}
+.registration-action{align-self:center}.registration-button{display:flex;align-items:center;justify-content:center;width:100%;max-width:420px;min-height:76px;padding:20px 30px;font-size:21px;font-weight:600;text-align:center}@media(max-width:760px){.registration-button{max-width:100%;min-height:70px;font-size:20px}}
