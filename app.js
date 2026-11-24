@@ -24,9 +24,9 @@ function yandexUrl(value) {
   try { const u = new URL(value); return u.protocol === 'https:' && u.hostname === 'forms.yandex.ru' ? u : null; }
   catch { return null; }
 }
-const url = yandexUrl(config.registrationFormUrl);
-if (url) {
-  document.querySelectorAll('[data-registration-link]').forEach(link => {
+document.querySelectorAll('[data-registration-link]').forEach(link => {
+  const url = yandexUrl(config.registrationFormUrls?.[link.dataset.registrationLink]);
+  if (url) {
     link.href = url.href;
-  });
-}
+  }
+});
